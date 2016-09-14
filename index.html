@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>BLACKJACK</title>
+    <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="style/bootstrap.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="style/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+</head>
+
+<body>
+    <div class="play-field">
+        <div class="container">
+            <!--Dealer part-->
+            <div class="dealer-part">
+                <h1 class="text">Карты дилера:</h1>
+                <div class="row">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
+                        <div id="dealer1"></div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2">
+                        <div id="dealer2"></div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2">
+                        <div id="dealer3"></div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2">
+                        <div id="dealer4"></div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2">
+                        <div id="dealer5"></div>
+                    </div>
+                </div>
+            </div>
+            <!--Player part-->
+            <div class="player-part">
+                <h1 class="text">Ваши карты:</h1>
+                <div class="row">
+                  <div class="col-lg-2 col-md-2 col-sm-2  col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
+                    <div id="player1"></div>
+                  </div>
+                  <div class="col-lg-2 col-md-2 col-sm-2">
+                    <div id="player2"></div>
+                  </div>
+                  <div class="col-lg-2 col-md-2 col-sm-2">
+                    <div id="player3"></div>
+                  </div>
+                  <div class="col-lg-2 col-md-2 col-sm-2">
+                    <div id="player4"></div>
+                  </div>
+                  <div class="col-lg-2 col-md-2 col-sm-2">
+                    <div id="player5"></div>
+                  </div>
+                </div>
+            </div>
+            <!--Your resources-->
+            <div class="you-have">
+                <div class="row">
+                    <div class="col-lg-5 col-md-5 col-sm-5 col-lg-offset-1 col-md-offset-1 ">
+                        <div id="money"></div>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-6">
+                        <div id="betdiv">
+                            <span class="bet">Ваша ставка:</span>&nbsp;
+                            <input type="text" size="6" id="bet" class="input-lg input-sm">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Buttons-->
+            <div class="buttons">
+                <div class="row">
+                    <div class="col-lg-2 col-md-2 col-sm-2">
+                      <button type="button" class="btn btn-info  btn-lg btn-style">Правила</button>
+                    </div>
+
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
+                        <input type="button" id="hitButton" class="btn btn-success
+                         btn-lg btn-style"
+                         value="Еще" onclick="hit()" disabled>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
+                        <input type="button" id="standButton" class="btn btn-danger btn-lg
+                        btn-style"
+                         value="Остановить" onclick="stand()" disabled>
+                    </div>
+                    <div class="col-lg-2  col-md-2 col-sm-2 col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
+                        <input type="button" id="newGameButton" class="btn btn-primary btn-lg
+                        btn-style"
+                          value="Новая игра" onclick="startGame()">
+                    </div>
+                </div>
+            </div>
+
+            <!--masseges-->
+            <div class="masseges">
+                <div class="row">
+                  <div class="col-lg-12 col-md-12">
+                    <p id="message">Добро пожаловать в БЛЕКДЖЕК!<br>Нажмите "Новая игра" что бы начать.</p>
+                  </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="Card.js"></script>
+    <script type="text/javascript" src="DisplayedCard.js"></script>
+    <script type="text/javascript" src="js/prototype.js"></script>
+    <script type="text/javascript" src="js/scriptaculous.js?load=effects"></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>

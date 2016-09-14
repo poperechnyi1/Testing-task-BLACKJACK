@@ -1,0 +1,83 @@
+@import 'https://fonts.googleapis.com/css?family=Bitter';
+
+body{
+background-color: #cd3018 !important;
+width:100%;
+
+
+}
+
+.play-field{
+  border: thick solid #ead143 !important;
+  margin: 50px 0;
+}
+
+.text{
+  font-family: 'Bitter', serif;
+  font-size:50px;
+  color:#ead143;
+}
+
+.bet{
+  font:24px 'Bitter',sans-serif;
+  color:#ead143;
+}
+
+#dealer1,#dealer2,#dealer3,#dealer4,#dealer5{
+  border: 2px solid #ead143;
+  border-radius: 5px;
+  background-color: #ead143;
+  margin: 0 auto;
+
+}
+
+#player1,#player2,#player3,#player4,#player5{
+border-radius: 5px;
+border: 2px solid #ead143;
+background-color: #ead143;
+margin: 0 auto;
+}
+
+#money{
+  color:#ead143;
+  font:24px 'Bitter',sans-serif;
+  padding: 10px 0 10px 150px;
+}
+
+
+.dealer-part{
+  padding: 50px 0;
+}
+
+.player-part{
+  padding-bottom: 50px;
+}
+
+input[type="text"]{
+  border-radius: 5px;
+  outline:none;
+}
+
+.input-lg{
+  font-weight: 600;
+}
+
+.buttons{
+  padding: 30px 0;
+}
+
+.btn{
+  width:132px;
+}
+
+.btn-style{
+padding: 0 20px;
+}
+
+#message{
+  font:bold 24px "Bitter",sans-serif;
+  color:#ead143;
+  text-align: center;
+  padding-bottom: 50px;
+
+}
